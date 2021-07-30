@@ -8,7 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Carousel } from 'react-responsive-carousel';
-
+import { FacebookShareButton } from 'react-share';
+import { FacebookIcon } from 'react-share';
 
 const useStyles = makeStyles({
   root: {
@@ -55,9 +56,8 @@ function newsLink2(){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+          <FacebookIcon />
+      <FacebookShareButton url={"https://nypost.com/2021/07/30/texas-pediatric-hospitals-report-uptick-in-covid-19-patients/"}/>
         <Button size="small" color="primary">
           Learn More
         </Button>
@@ -85,9 +85,7 @@ function newsLink2(){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+      <FacebookShareButton url={"https://nypost.com/2021/07/30/texas-pediatric-hospitals-report-uptick-in-covid-19-patients/"}/>
         <Button size="small" color="primary">
           Learn More
         </Button>
@@ -116,9 +114,8 @@ function newsLink2(){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <FacebookShareButton url={"https://nypost.com/2021/07/30/texas-pediatric-hospitals-report-uptick-in-covid-19-patients/"}/>
+
         <Button size="small" color="primary" onClick={newsLink1}>
           Learn More
         </Button>
@@ -146,9 +143,7 @@ function newsLink2(){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+      <FacebookShareButton url={"https://nypost.com/2021/07/30/texas-pediatric-hospitals-report-uptick-in-covid-19-patients/"}/>
         <Button size="small" color="primary" onClick={newsLink2}>
           Learn More
         </Button>

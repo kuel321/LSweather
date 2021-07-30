@@ -99,7 +99,7 @@ export default class Weather extends Component {
                 </div>
               </div>
               <div className="weeklyContainer">
-                <div className="weeklyDiv"><Forecast  imageA={this.state.newsData.articles[0].urlToImage} imageB={this.state.newsData.articles[1].urlToImage}
+                <div className="weeklyDiv"><Forecast  imageA={"https://nypost.com/wp-content/uploads/sites/2/2021/07/delta-variant-chickenpox-08.jpg?quality=90&strip=all&w=1200"} imageB={"https://nypost.com/wp-content/uploads/sites/2/2021/07/texas-covid-66.jpg?quality=90&strip=all&w=900&h=600&crop=1"}
                                                               monImgA={clouds[cloudsweekConverted[0]]}
                                                               tuesImgA={clouds[cloudsweekConverted[1]]}
                                                               wedImgA={clouds[cloudsweekConverted[2]]}
@@ -115,10 +115,10 @@ export default class Weather extends Component {
                                                                   satTempA={Math.round(this.state.weeklyData.daily[5].feels_like.day)} 
                                                                   sunTempA={Math.round(this.state.weeklyData.daily[6].feels_like.day)} 
                                                                   
-                                                                  newstitleA={this.state.newsData.articles[0].content.slice(0,40) + "..."} newstitleB={this.state.newsData.articles[1].content.slice(0,40) + "..."}
-                                                                  newsaltA={this.state.newsData.articles[0].source.id} newsaltB={this.state.newsData.articles[1].source.id}
-                                                                  newsdescriptionA={this.state.newsData.articles[0].description.slice(0,80)} newsdescriptionB={this.state.newsData.articles[1].description.slice(0,80)}
-                                                                  newslinkA={this.state.newsData.articles[0].url} newslinkB={this.state.newsData.articles[1].url}
+                                                                  newstitleA={"The Delta COVID-19 variant appears to ca" + "..."} newstitleB={"Texas pediatric hospitals report uptick i" + "..."}
+                                                                  newsaltA={"newsdeltacovid"} newsaltB={"newstexas"}
+                                                                  newsdescriptionA={"The Delta COVID-19 variant appears to cause more sever illness and spread as..."} newsdescriptionB={"Northern Texas hospitals are reporting an increase in pediatric COVID-19 patients as federal data..."}
+                                                                  newslinkA={"https://nypost.com/2021/07/30/delta-covid-variant-spreads-like-chickenpox-cdc-docs-reveal/"} newslinkB={"https://nypost.com/2021/07/30/texas-pediatric-hospitals-report-uptick-in-covid-19-patients/"}
 
 
                                                                   />
